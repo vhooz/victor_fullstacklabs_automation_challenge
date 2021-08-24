@@ -1,0 +1,18 @@
+[
+    {
+      "title": "validate new appointment is added correctly",
+      "petName" : "toribio",
+      "ownerName" : "Julio",
+      "date" : "2021-04-11",
+      "time" : "10:00",
+      "symptoms" : "Not eating."
+    },
+    {
+      "title": "validate appointment is not added when date is in the past.",
+      "petName" : "toribio",
+      "ownerName" : "Julio",
+      "date" : "2021-04-04",
+      "time" : "10:00",
+      "symptoms" : "Not eating."
+    }
+  ]

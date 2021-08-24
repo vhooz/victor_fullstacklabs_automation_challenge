@@ -1,0 +1,241 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-24T20:23:57.911Z",
+    "end": "2021-08-24T20:24:08.209Z",
+    "duration": 10298,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03e2d75c-3283-4d66-ac06-e89723166609",
+      "title": "",
+      "fullFile": "cypress/integration/UI_Test.specs.js",
+      "file": "cypress/integration/UI_Test.specs.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36284ca4-b6e4-442a-9e94-881aef27cad9",
+          "title": " QA Automation Engineer Challenge - FullStack Labs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "5c69570a-eb1d-4eda-b504-d7bfa15e145f",
+              "title": "validate new appointment is added correctly",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Add the appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate new appointment is added correctly Add the appointment",
+                  "timedOut": null,
+                  "duration": 5515,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "formPage.visit();\nformPage.fillInput('pet', data.petName);\nformPage.fillInput('owner', data.ownerName);\nformPage.fillInput('date', data.date);\nformPage.fillInput('time', data.time);\nformPage.fillInput('symptoms', data.symptoms);\nformPage.submit();",
+                  "err": {},
+                  "uuid": "774a305c-1870-420b-99de-e104a91a5be2",
+                  "parentUUID": "5c69570a-eb1d-4eda-b504-d7bfa15e145f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate new appointment is added correctly Validate appointment",
+                  "timedOut": null,
+                  "duration": 265,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "apt.findValue(data.petName); //.should('have.value',data.petName);\napt.findValue(data.ownerName);\napt.findValue(data.date);\napt.findValue(data.time);\napt.findValue(data.symptoms);",
+                  "err": {},
+                  "uuid": "ba80cc72-e7fc-4a6d-af24-b6d15a8e0eee",
+                  "parentUUID": "5c69570a-eb1d-4eda-b504-d7bfa15e145f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Delete appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate new appointment is added correctly Delete appointment",
+                  "timedOut": null,
+                  "duration": 147,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "apt.delete();",
+                  "err": {},
+                  "uuid": "cd340873-5a82-4809-af57-ad69071fb116",
+                  "parentUUID": "5c69570a-eb1d-4eda-b504-d7bfa15e145f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "774a305c-1870-420b-99de-e104a91a5be2",
+                "ba80cc72-e7fc-4a6d-af24-b6d15a8e0eee",
+                "cd340873-5a82-4809-af57-ad69071fb116"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 5927,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "ec1a038b-20da-4571-86ea-8866ad9e6455",
+              "title": "validate appointment is not added when date is in the past.",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Add the appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate appointment is not added when date is in the past. Add the appointment",
+                  "timedOut": null,
+                  "duration": 2439,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "formPage.visit();\nformPage.fillInput('pet', data.petName);\nformPage.fillInput('owner', data.ownerName);\nformPage.fillInput('date', data.date);\nformPage.fillInput('time', data.time);\nformPage.fillInput('symptoms', data.symptoms);\nformPage.submit();",
+                  "err": {},
+                  "uuid": "a226b525-4770-46fc-90d8-33b395272f84",
+                  "parentUUID": "ec1a038b-20da-4571-86ea-8866ad9e6455",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Validate appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate appointment is not added when date is in the past. Validate appointment",
+                  "timedOut": null,
+                  "duration": 168,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "apt.findValue(data.petName); //.should('have.value',data.petName);\napt.findValue(data.ownerName);\napt.findValue(data.date);\napt.findValue(data.time);\napt.findValue(data.symptoms);",
+                  "err": {},
+                  "uuid": "6661f379-1f7d-4494-a4dc-9bb81b036c85",
+                  "parentUUID": "ec1a038b-20da-4571-86ea-8866ad9e6455",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Delete appointment",
+                  "fullTitle": " QA Automation Engineer Challenge - FullStack Labs validate appointment is not added when date is in the past. Delete appointment",
+                  "timedOut": null,
+                  "duration": 98,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "apt.delete();",
+                  "err": {},
+                  "uuid": "00a71538-a270-4bc3-9b18-0996073e5539",
+                  "parentUUID": "ec1a038b-20da-4571-86ea-8866ad9e6455",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a226b525-4770-46fc-90d8-33b395272f84",
+                "6661f379-1f7d-4494-a4dc-9bb81b036c85",
+                "00a71538-a270-4bc3-9b18-0996073e5539"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2705,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.fullstacklabs</groupId>
+  <artifactId>fullstacklabs-automation-challenge</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+      <properties>
+        <selenium.version>3.141.59</selenium.version>
+        <junit.version>4.12</junit.version>
+        <webdrivermanager.version>3.2.0</webdrivermanager.version>
+        <java.version>11</java.version>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+    </properties>
+    
+    <dependencies>
+    
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+        
+        	<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+	<dependency>
+	    <groupId>com.relevantcodes</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>2.41.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+	<dependency>
+	    <groupId>ru.yandex.qatools.ashot</groupId>
+	    <artifactId>ashot</artifactId>
+	    <version>1.5.4</version>
+	</dependency>
+	
+    </dependencies>
+  
+</project>
